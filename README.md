@@ -12,9 +12,12 @@ A **real, importable 64×64 Minecraft skin** for the classic (wide-arm) model. M
 
 ## Finish and backup
 
-The current skin has subtle satin-style highlights on the dark jacket and pants, brighter gold trim, and slightly more hair definition. These are texture details, **not actual reflective materials**; true shininess depends on client-side shaders/material support.
+The current **polished-leather edition** has higher-contrast, hand-positioned blue-gray highlight streaks along the black jacket, sleeves and pants, plus brighter gold/cyan accents. These are **painted faux reflections**, not physically reflective materials: the highlights won't move when the light or character moves.
 
-The previous matte version is archived at [`skins/archive/Modern_Owner_Matte_64x64.png`](./skins/archive/Modern_Owner_Matte_64x64.png).
+Earlier skins are preserved as backups:
+
+- [Previous subtle-satin version](./skins/archive/Modern_Owner_Subtle_Satin_64x64.png)
+- [Original matte version](./skins/archive/Modern_Owner_Matte_64x64.png)
 
 ## PS5 on a Fabric/Geyser server
 
