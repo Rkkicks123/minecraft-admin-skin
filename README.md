@@ -1,30 +1,31 @@
 # Modern Owner — Minecraft Admin Skin
 
-A standard **64×64 classic/wide-arm Minecraft skin** with medium brown hair, amber eyes, a subtle gold circlet, modern black-and-gold clothing and cyan accents.
+A **real, importable 64×64 Minecraft skin** for the classic (wide-arm) model. Modern server-owner look: medium-brown hair, amber eyes, understated gold circlet, tailored black hoodie-jacket, restrained cyan details, black trousers and sneakers.
 
-## Files
+## Actual skin — not concept art
 
-- **[Skin PNG — open/download](./Modern_Owner_Admin_64x64.png)** — Minecraft importable skin (64×64).
-- **[Actual front preview](./Modern_Owner_Real_Front.png)** — pixel-accurate flat front view, not the cinematic concept art.
+- [**Modern_Owner_Admin_64x64.png**](./Modern_Owner_Admin_64x64.png): the real Minecraft classic skin texture (64×64 PNG). This is the file to use with skin mods.
+- [**Modern_Owner_Real_Front.png**](./Modern_Owner_Real_Front.png): a pixel-accurate front view composited from the real skin's base and outer layers.
+- [**Original stylized design**](./concepts/modern-owner-concept-art.png) and [**original rendered preview**](./concepts/modern-owner-stylized-preview.png): archived concept/reference artwork, **not usable skin textures**. The game's normal skin model cannot reproduce cinematic lighting or flowing 3D outfits.
 
-![Actual front skin preview](./Modern_Owner_Real_Front.png)
+![Actual in-game texture front view](./Modern_Owner_Real_Front.png)
 
-## Skin Restorer (Fabric server)
+## PS5 on a Fabric/Geyser server
 
-Use this direct PNG URL:
+For the *Suiranoil SkinRestorer* Fabric mod, use the direct PNG URL below:
 
 ```text
 https://raw.githubusercontent.com/Rkkicks123/minecraft-admin-skin/main/Modern_Owner_Admin_64x64.png
 ```
 
-With [Suiranoil SkinRestorer](https://github.com/Suiranoil/SkinRestorer) installed on a compatible Fabric server, run the following from the **server console** while the player is connected (no leading slash):
+In the **server console** (omit the leading `/`), while your Bedrock player is online:
 
 ```text
 skin set web classic "https://raw.githubusercontent.com/Rkkicks123/minecraft-admin-skin/main/Modern_Owner_Admin_64x64.png" .MegBoyz
 ```
 
-If the Bedrock player has a different exact name/prefix in the server player list, replace `.MegBoyz` with that name. This command is for *Suiranoil SkinRestorer*, not the separate *SkinsRestorer* plugin.
+If your Floodgate configuration uses a different username prefix, replace `.MegBoyz` with the exact in-server name.
 
-**PS5 note:** This may change how other players (especially Java players) see a PS5 Bedrock player, but it does **not** guarantee the skin appears on the PS5 owner's own screen. PS5 does not natively import arbitrary skin PNGs, and Geyser/Floodgate skin handling differs between clients.
+**Important:** A server-assigned skin may be visible to Java players but is not guaranteed to appear on the PS5 owner's own Bedrock screen. Skin caching can also delay updates. PS5 does not support arbitrary PNG skin import directly.
 
-The skin is vanilla compatible; a standard skin cannot recreate the flowing 3D coat or cinematic lighting of concept renders.
+**No Minecraft world or server reset is needed** when switching skins.
