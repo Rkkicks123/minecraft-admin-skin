@@ -1,10 +1,30 @@
 # Modern Owner — Minecraft Admin Skin
 
-A classic 64×64 Minecraft skin for a server owner / administrator, designed with medium brown hair, golden-amber eyes, black-and-gold modern clothing and cyan accents.
+A standard **64×64 classic/wide-arm Minecraft skin** with medium brown hair, amber eyes, a subtle gold circlet, modern black-and-gold clothing and cyan accents.
 
-- `Modern_Owner_Admin_64x64.png` — the actual importable Minecraft skin.
-- `Modern_Owner_Real_Front.png` — a pixel-perfect front view showing the actual 64×64 texture (not a cinematic concept illustration).
+## Files
 
-The skin is standard classic/wide-arm format for Minecraft Java or Bedrock skin import. Console Bedrock players cannot normally import a PNG directly; server-side skin plugins may change how other players see the console player's character, but this is not guaranteed to alter the PS5 owner's client-side skin.
+- **[Skin PNG — open/download](./Modern_Owner_Admin_64x64.png)** — Minecraft importable skin (64×64).
+- **[Actual front preview](./Modern_Owner_Real_Front.png)** — pixel-accurate flat front view, not the cinematic concept art.
 
-Use the **raw PNG URL** of the skin file with a compatible skin-management mod. This repo is not a server mod or an executable.
+![Actual front skin preview](./Modern_Owner_Real_Front.png)
+
+## Skin Restorer (Fabric server)
+
+Use this direct PNG URL:
+
+```text
+https://raw.githubusercontent.com/Rkkicks123/minecraft-admin-skin/main/Modern_Owner_Admin_64x64.png
+```
+
+With [Suiranoil SkinRestorer](https://github.com/Suiranoil/SkinRestorer) installed on a compatible Fabric server, run the following from the **server console** while the player is connected (no leading slash):
+
+```text
+skin set web classic "https://raw.githubusercontent.com/Rkkicks123/minecraft-admin-skin/main/Modern_Owner_Admin_64x64.png" .MegBoyz
+```
+
+If the Bedrock player has a different exact name/prefix in the server player list, replace `.MegBoyz` with that name. This command is for *Suiranoil SkinRestorer*, not the separate *SkinsRestorer* plugin.
+
+**PS5 note:** This may change how other players (especially Java players) see a PS5 Bedrock player, but it does **not** guarantee the skin appears on the PS5 owner's own screen. PS5 does not natively import arbitrary skin PNGs, and Geyser/Floodgate skin handling differs between clients.
+
+The skin is vanilla compatible; a standard skin cannot recreate the flowing 3D coat or cinematic lighting of concept renders.
