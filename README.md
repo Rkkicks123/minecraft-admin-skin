@@ -1,43 +1,30 @@
-# Minecraft Owner Admin Skin — A Crest Edition
+# Minecraft Owner Skin — Golden Shadow (Dark Gold)
 
-A real, importable **64×64 Minecraft classic / wide-arm skin** for the owner's `.MegBoyz` character. Inspired by the chosen **powerful supernatural + recognizable administrator** concept.
+This repository hosts the current Minecraft skin for the PS5 Bedrock player `.MegBoyz` through a Fabric server with Geyser/Floodgate and **Suiranoil SkinRestorer**.
 
 ## Current skin
 
-- [**Modern_Owner_Admin_64x64.png**](./Modern_Owner_Admin_64x64.png) — actual 64×64 Minecraft skin texture; **use this for SkinRestorer**.
-- [**Modern_Owner_Real_Front.png**](./Modern_Owner_Real_Front.png) — pixel-accurate front/back preview assembled from the genuine base and outer skin layers. Unlike stylized concept art, it does not add 3D accessories or lighting effects.
+**Golden Shadow / Dark Gold** — a real **64×64 PNG**, **Slim (Alex)**-arm model, downloaded by the owner from [its Laby skin page](https://laby.net/skins/68d71cfcda1655d034ad3f0a44b63ad1). Credit for the original skin belongs to its creator; this repository only hosts a copy for the owner's server.
 
-![Actual front and back of Minecraft skin](./Modern_Owner_Real_Front.png)
+- [**Golden_Shadow_Slim_64x64.png**](./Golden_Shadow_Slim_64x64.png) — skin at a unique URL, recommended to avoid caching previous versions.
+- [**Modern_Owner_Admin_64x64.png**](./Modern_Owner_Admin_64x64.png) — same skin at the pre-existing live filename.
+- [**Previous A-Crest Admin skin**](./skins/archive/Owner_Admin_A_64x64.png) — backup.
+- [**Older versions**](./skins/archive/) — past custom designs.
 
-Features: brown hair and amber eyes; large gold-and-cyan **A** owner emblems on chest and back; red admin armband; cyan circuit accents; dark owner uniform and white-soled shoes.
+## Set the new skin in the Minecraft server console
 
-**Minecraft limitation:** Cyan details are painted onto the skin. They do not actually glow or reflect light on PlayStation 5.
-
-## Previous versions / rollback
-
-- [Previous polished version](./skins/archive/Modern_Owner_Polished_64x64.png)
-- [Earlier subtle satin version](./skins/archive/Modern_Owner_Subtle_Satin_64x64.png)
-- [Original matte version](./skins/archive/Modern_Owner_Matte_64x64.png)
-- [Original concept artwork](./concepts/modern-owner-concept-art.png)
-
-To roll back, replace the live PNG with one of the archived PNGs using the **same live filename**.
-
-## SkinRestorer on Fabric + Geyser
-
-Direct current-skin URL:
+For **Suiranoil SkinRestorer**, no leading slash in the server console. **Important: use `slim`, not `classic`.**
 
 ```text
-https://raw.githubusercontent.com/Rkkicks123/minecraft-admin-skin/main/Modern_Owner_Admin_64x64.png
+skin set web slim "https://raw.githubusercontent.com/Rkkicks123/minecraft-admin-skin/main/Golden_Shadow_Slim_64x64.png" .MegBoyz
 ```
 
-For the Suiranoil SkinRestorer Fabric mod, in the server console (no leading `/`):
+The previous live URL also works with `slim`:
 
 ```text
-skin set web classic "https://raw.githubusercontent.com/Rkkicks123/minecraft-admin-skin/main/Modern_Owner_Admin_64x64.png" .MegBoyz
+skin set web slim "https://raw.githubusercontent.com/Rkkicks123/minecraft-admin-skin/main/Modern_Owner_Admin_64x64.png" .MegBoyz
 ```
 
-If your Floodgate name prefix differs, use the exact connected player name.
+Reconnect the player if the appearance does not update right away. SkinRestorer/Bedrock may cache the previous appearance.
 
-**PS5 note:** Geyser/Floodgate server-side skin assignment may appear differently on Java clients versus your own PS5 client. Skin-restorer caching can delay or prevent immediately seeing an updated PNG at an unchanged URL. If necessary, use a distinct versioned filename and URL for the next skin revision.
-
-Updating the skin does **not** modify the Minecraft world.
+A server-assigned skin isn't guaranteed to appear on the local PS5 client even when Java players see it. Changing this file does **not** modify or restart the Minecraft world.
